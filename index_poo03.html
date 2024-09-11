@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>JS poo 03</title>
+</head>
+<body>
+    <p>JS poo 03</p>    
+    <script>
+		const uneVoiture = { modele: "Porsche 911", km: 250 };
+		const uneAutreVoiture = Object.create(uneVoiture);
+
+		console.log(uneAutreVoiture.modele,uneAutreVoiture.km);
+
+		uneVoiture.km=499;
+		uneVoiture.modele="Porsche 928";
+
+		console.log(uneVoiture.modele,uneVoiture.km);
+		console.log(uneAutreVoiture.modele,uneAutreVoiture.km);
+
+		uneAutreVoiture.km=250;
+		uneAutreVoiture.modele="AUDI Q7";
+
+		console.log(uneVoiture.modele,uneVoiture.km);
+		console.log(uneAutreVoiture.modele,uneAutreVoiture.km);
+
+		uneVoiture.km=333;
+		uneVoiture.modele="Renault Clio";
+		console.log(uneVoiture.modele,uneVoiture.km);
+		console.log(uneAutreVoiture.modele,uneAutreVoiture.km);
+    </script>
+</body>
+</html> 

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>JS poo 01</title>
+</head>
+<body>
+    <p>JS poo  01</p>    
+    <script>
+		class Voiture {
+			constructor(modele, couleur, puissance) {
+				this.modele = modele;
+				this.couleur = couleur;
+				this.puissance = puissance;
+				this.km = 0;
+			}
+		
+			decrire() {
+				let ret=this.modele+" de couleur "+this.couleur;
+				ret+=" a "+this.puissance+"CV a "+this.km+"Km";
+				return ret;
+			}
+
+			parcourir(distanceKm) {
+				this.km+=distanceKm;
+			}
+		}
+    </script>
+</body>
+</html> 
