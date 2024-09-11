@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>JS base11</title>
+        <script src="js/script02.js"></script>
+    </head>
+    <body>
+        <p>JS base11</p>
+        <script>
+            let nombre = 2;
+
+            maFonction();
+            carre(nombre);
+            nombre = carre2(nombre);
+            carre(nombre);
+            console.log(multiplication(2,5));
+            console.log(multiplication(6,4));
+
+            console.log(hello("Greta"));
+            console.log(hello("Donald")); 
+
+            const maVoiture = {
+                modele: "Scenic",
+                couleur: "bordeaux",
+                marque: "Renault",
+                porte: 5,
+                kmParcourus : 25000,
+                roule (km) {
+                    this.kmParcourus+=km;
+                    }
+                };
+
+                console.log(maVoiture.kmParcourus);
+                maVoiture.roule(1506);
+                console.log(maVoiture.kmParcourus);
+
+            </script> 
+    </body>
+    </html>
